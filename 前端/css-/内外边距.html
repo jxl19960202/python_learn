@@ -1,0 +1,48 @@
+<!--当相邻的2个标签之间都有外边距,取大的那个-->
+<!--父级div中没有 border，padding，inline content，子级div的margin会一直向上找，直到找到某-->
+<!--个标签包括border，padding，inline content 中的其中一个，然后按此div 进行margin ；如果要与父级有外间距.-->
+<!--在父级的css属性种加上overflow: hidden;即可-->
+<!--body标签与html标签也有外间距,解决:在body的css属性种将外间距设置为0-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .div1{
+            height: 500px;
+            background-color: antiquewhite;
+            /*overflow: hidden;*/
+        }
+        .div2,.div3,.div4{
+            width: 300px;
+            height: 300px;
+        }
+        .div2{
+            background-color: red;
+            /*border: black 5px solid;*/
+            /*padding: 10px; 内边距(上右下左 top,right,botton,left)*/
+            /*margin: 20px; 外边距(上右下左 top,right,botton,left)*/
+            margin: 20px;
+        }
+        /*.div3{*/
+            /*background-color: yellow;*/
+            /*!*margin-top: 30px;*!*/
+        /*}*/
+        .div4{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="div4">hello</div>
+    <div class="div1">
+        <div class="div2">hello world1</div>
+        <!--<div class="div3">hello world2</div>-->
+    </div>
+
+</body>
+</html>

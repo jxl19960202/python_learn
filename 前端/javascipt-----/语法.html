@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // javascript:先把所有代码加载完之后再执行
+    // var a = 1;
+    // console.log(a)
+    // function f() {
+    //     var a=1;
+    //
+    // }
+    // var b;
+    // console.log(f(),b)
+    // 条件判断,switch控制语句;循环
+    // var a=2;
+    // if(a==1){
+    //     console.log('right')
+    // }
+    // else if (a==1){
+    //     console.log('1')
+    // }
+    // else {
+    //     console.log('trye')
+    // }
+
+    // var day=1;
+    // switch (day) {
+    //     case 1:console.log('one');break;
+    //     case 2:console.log('two') ;break
+    //     case 3:console.log('three');break
+    //     case 4:console.log('four');break
+    //     case 5:console.log('five');break
+    //     case 6:console.log('six');break
+    //     case 7:console.log('seven');break
+    // }
+
+    // for(var i=1;i<7;i++) {
+    //     console.log(i);
+    // }
+    // // for  循环内先执行代码块,在执行i++
+    // }
+
+    // var a = [1,2,3,4,5,6,7];
+    // for (i in a){
+    //     // console.log(i) i为a内的位置索引
+    // }
+    // var a=0,b=0
+    // while (a<=100){
+    //     b += a
+    //     a += 1
+    // }
+    // console.log(b)
+
+    // try {
+    //     throw Error('我顶你个肺')     throw主动触发异常
+    // }
+    // catch (e) {                     接收异常
+    //     console.log('香蕉你个瓜皮')
+    // }
+    // finally {                 无论是否异常,都会执行
+    //     console.log('打不过啊')
+    // }
+
+    // 对象:数据对象:Array ,String , Date, Math, Boolean, Number  Function, Global, Error, RegExp , Object
+    //
+    // var cnweek=new Array(7);
+    // for (var i=0;i<=6;i++){
+    //     cnweek[i]=new Array(2);
+    // }
+    // cnweek[0][0]="星期日";
+    // cnweek[0][1]="Sunday";
+    // cnweek[1][0]="星期一";
+    // cnweek[1][1]="Monday";
+    //
+    // cnweek[6][0]="星期六";
+    // cnweek[6][1]="Saturday";
+    // console.log(cnweek)
+
+    // function对象:
+    // arguments:有传入参数组合成的数组
+    function nxAdd() {
+        var result='';
+        for (var num in arguments) {
+            result += arguments[num]
+        }
+        console.log(result)
+    }
+    nxAdd('h','e','l','l','o')
+    //
+    // }
+    //
+    // nxAdd(1,2,3,4,5) 可以传入任意参数,不限制
+
+
+    // 作用域链与python函数类似
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!--relative;以自己的位置为参照点.absolute:以已定位了的祖先标签为参照点(没有的话就是body标签)-->
+<!--fixed:以网页为参照点-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #a{
+            /*background-color: yellowgreen;*/
+            height: 1000px;
+            position: relative;
+        }
+        /*.a,.b,.c{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+        /*}*/
+        /*.a{*/
+            /*background-color: yellow;*/
+            /*height: 50px;*/
+            /*width: 50px;*/
+            /*text-align: center;*/
+            /*line-height: 50px;*/
+            /*background: red;*/
+            /*bottom: 10px;*/
+            /*right: 10px;*/
+        /*}*/
+        /*.b{*/
+            /*background-color: yellow;*/
+            /*position: relative; 相对定位,以自己原来的位置进行定位移动*/
+            /*left: 500px;*/
+        /*}*/
+        /*.b{*/
+            /*background-color: yellow;*/
+            /*position: absolute;*/
+            /*left: 100px;*/
+        /*}*/
+        /*.c{*/
+            /*background-color: forestgreen;*/
+        /*}*/
+        #b{
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            text-align: center;
+            line-height: 50px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div class="a">hello1</div>
+        <div class="b">hello2</div>
+        <div class="c">hello3</div>
+    </div>
+    <div id="b">hello fuck</div>
+</body>
+</html>

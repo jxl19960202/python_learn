@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<select id="pro">
+    <option value="">请选择省份</option>
+    <!--<option value="">河北省</option>-->
+    <!--<option value="">河南省</option>-->
+    <!--<option value="">北京</option>-->
+</select>
+
+<select name="" id="citys">
+    <option value="">请选择城市</option>
+</select>
+
+
+
+<script>
+
+
+    data={"河北省":["石家庄","廊坊"],"山西":["晋城","大同"],"陕西":["西安","延安"]};
+    var pro_ele=document.getElementById("pro"),i;
+    var city_ele=document.getElementById("citys");
+    for (i in data){
+        var pot=document.createElement("option");
+        pot.innerHTML=i;
+        pro_ele.appendChild(pot);
+    }
+    pro_ele.onchange=function () {
+        // console.log(this);
+        // console.log(this.selectedIndex);
+        // console.log(this.children[this.selectedIndex].innerHTML);
+        // console.log(this.options[this.selectedIndex].innerHTML);
+        city_ele.options.length=1;
+        var citys=data[this.options[this.selectedIndex].innerHTML];
+        for (var i=0;i<citys.length;i++){
+            var opt=document.createElement("option");
+            opt.innerHTML=citys[i];
+            city_ele.appendChild(opt);
+        }
+
+
+    }
+
+
+
+        // console.log(this.selectedIndex);
+        // console.log(this.options[this.selectedIndex])
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            height: 1800px;
+            background-color: white;
+        }
+        .div2{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #99aecb;
+            opacity: 70%;
+        }
+        .div3{
+           height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            background-color: yellow;
+
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" >
+        <input type="button" value="show" onclick="f1()">
+        div1
+    </div>
+    <div class="div2 hide" >div2</div>
+    <div class="div3 hide" >
+        <input type="button" value="pass" onclick="f2()">
+        div3
+    </div>
+    <script>
+        var ele1 = document.getElementsByClassName("div2")[0];
+        var ele2 = document.getElementsByClassName("div3")[0];
+        function f1() {
+            ele1.classList.remove("hide");
+            ele2.classList.remove("hide");
+        }
+        function f2() {
+            ele1.classList.add("hide");
+            ele2.classList.add("hide");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--在标签内设置属性(自己可以定义),通过属性的形式选择-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*[res]{*/
+            /*color: red;      选择所有具有[res]属性的*/
+        /*}*/
+        /*div[res]{*/
+            /*color: red;  选择具有div[res]的*/
+        /*}*/
+        /*[res="name3"]{*/
+            /*color: red;  选择属性[res="name3"]的*/
+        /*}*/
+        /*[res~="sb"]{*/
+            /*color: red;    [res~="sb"],选择属性种res等于sb的, ~= 多个值中的一个*/
+        /*}*/
+        /*[res^="n"]{*/
+            /*color: red;  选择res的值开头有n的   [res^="n"]*/
+        /*}*/
+        /*[res$="d"]{*/
+            /*color: red;  选择res的值结尾有d的  [res$="d"]*/
+        /*}*/
+        /*[res*="e"]{*/
+            /*color: red;  选择res的值中包含e元素的 [res*="e"]*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div res="name1">hello 111</div>
+<div res="name2 sb cd">hello 222</div>
+<div res="name3">hello 333</div>
+<p res="name4">hello 444</p>
+</body>
+</html>

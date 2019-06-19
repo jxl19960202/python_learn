@@ -1,0 +1,30 @@
+<!--标签有内联标签(可以在同一行显示,不能设置高度)-->
+      <!--块级标签(不能再同一行,可以设置heigh)-->
+<!--?块级标签,或内联标签想要有另一种类标签的属性要怎么做呢-->
+<!--display:-->
+    <!--inline 内联-->
+    <!--block 块级-->
+    <!--inline-block 可以设置height,也在同一行显示-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div,span{
+            display: inline-block;
+        }
+        span{
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hello world1
+        <div>hello world2</div>
+    </div>
+    <span>hello</span>
+</body>
+</html>

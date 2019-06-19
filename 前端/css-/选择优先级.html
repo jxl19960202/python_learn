@@ -1,0 +1,27 @@
+<!--优先级:内联样式 1000 > id 100 >class 10 >标签 1-->
+有!important则优先
+<!--如既含id,又有class,它们相加比较大小-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级</title>
+    <style>
+        div{
+            color: red !important;
+        }
+        .ab{
+            color: yellow ;
+        }
+        #a{
+            color: black;
+        }
+        div#a{
+            color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+<div id="a" class="ab">hello1111111111</div>
+</body>
+</html>

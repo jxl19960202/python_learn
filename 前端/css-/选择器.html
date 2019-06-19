@@ -1,0 +1,46 @@
+<!--*{} 选择所有标签-->
+<!--标签{},对所有该标签的进行操作,如p{color: red;},对所有p标签的内容颜色变红-->
+ <!--ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用。-->
+<!--#a{color: red;}找到所有id为a的标签,对其内容颜色进行操作-->
+<!--.sb{...}对标签属性class='sb'的进行操作-->
+<!--.sb,#a{....} ,是并列的意思,对这2个都进行操作-->
+<!--空格 ,div div{...},对div标签嵌套内的所有后代类div进行操作-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sb</title>
+    <style>
+
+        #a{
+            color: red;
+        }
+        .sb,#a{
+            background-color: yellow;
+        }
+        div div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--<h1 class="sb">hello</h1>-->
+<!--<p>hello1111</p>-->
+<!--<p>hello<p>hello<p id="a">hello2222</p></p></p>-->
+<!--<p id="b" class="sb">hello3333</p>-->
+<!--<p>hello4444</p>-->
+<div>
+    hello 111
+    <div>
+        hello 222
+        <div>
+            from hello 222
+        </div>
+    </div>
+    <div>
+        hello333
+    </div>
+    <p>hello 444</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="全选" onclick="f1()">
+    <input type="button" value="取消" onclick="f2()">
+    <input type="button" value="反选" onclick="f3()">
+    <table border="1px">
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>222</td>
+            <td>222</td>
+            <td>222</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>333</td>
+            <td>333</td>
+            <td>333</td>
+        </tr>
+    </table>
+    <script>
+        var input_ele=document.getElementsByTagName("input");
+        function f1() {
+            for (var i=0;i<input_ele.length;i++){
+                var input=input_ele[i];
+                input.checked=true;
+            }
+        }
+        function f2() {
+            for (var i=0;i<input_ele.length;i++){
+                var input=input_ele[i];
+                input.checked=false;
+            }
+        }
+        function f3() {
+            for (var i=0;i<input_ele.length;i++){
+                var input=input_ele[i];
+                input.checked=!input.checked;
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
